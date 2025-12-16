@@ -1,66 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Mouad Idrissi Zaki – CV</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; line-height: 1.5; }
-    h1 { margin-bottom: 5px; }
-    h2 { margin-top: 30px; border-bottom: 1px solid #000; padding-bottom: 4px; }
-    .section { margin-bottom: 20px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouad Idrissi Zaki - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height:  1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom:  3px solid #2c3e50;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin-top:  30px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom:  2px solid #3498db;
+        }
+        
+        h3 {
+            color: #34495e;
+            font-size: 1.2em;
+            margin-top: 15px;
+            margin-bottom:  8px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .summary {
+            text-align: justify;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .skill-category {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .skill-category h4 {
+            color:  #2c3e50;
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+        
+        .skill-category p {
+            color: #666;
+            font-size: 0.9em;
+            line-height: 1.8;
+        }
+        
+        .project {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .project-title {
+            color: #2c3e50;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .project-tech {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+        
+        . project ul {
+            margin-left: 20px;
+            color: #555;
+        }
+        
+        .project li {
+            margin-bottom: 5px;
+        }
+        
+        ul {
+            margin-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+        
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            
+            . container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            . skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>Mouad Idrissi Zaki</h1>
+            <div class="contact-info">
+                Email: your.email@example.com | Phone: +XX XXX XXX XXXX | LinkedIn: linkedin.com/in/yourprofile
+            </div>
+        </header>
 
-<h1>Mouad Idrissi Zaki</h1>
-<p>Email: zakimouad04@gmail.com<br>
-GitHub: https://github.com/MOUAD-IDRISSI-ZAKI<br>
-Location: China</p>
+        <section class="section">
+            <h2>Professional Summary</h2>
+            <div class="summary">
+                <p>I am a Computer Science graduate with a strong foundation in analytical reasoning, mathematical modeling, and systematic problem-solving. My academic training has equipped me with rigorous skills in programming, algorithms, data structures, and applied mathematics, which I am now strategically directing toward finance.  I approach complex problems with precision and discipline, emphasizing conceptual clarity and structured analysis over superficial understanding.</p>
+                
+                <p>Currently pursuing advanced studies in finance, I am building comprehensive knowledge in financial markets, corporate finance, valuation methods, and risk management. My objective is to combine my analytical and computational background with formal financial training to contribute meaningfully to investment analysis, financial planning, or corporate finance roles.  I value intellectual rigor, independent learning, and informed decision-making, and I am committed to developing a professional profile that integrates technical competence with sound financial judgment.</p>
+            </div>
+        </section>
 
-<h2>Profile</h2>
-<p>Quant-focused computer science student and developing day-trader. Building projects in machine learning, data processing, and quantitative analysis. Interested in applied mathematics, model design, and trading systems.</p>
+        <section class="section">
+            <h2>Technical Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <p>Python, Java, C++, C, JavaScript, SQL</p>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Data Analysis & Visualization</h4>
+                    <p>Python (Pandas, NumPy, Matplotlib), R, Excel (Advanced), Data manipulation and statistical analysis</p>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Software & Tools</h4>
+                    <p>Git/GitHub, Linux/Unix, MATLAB, Jupyter Notebook, Visual Studio Code, Database management systems</p>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Mathematical & Analytical</h4>
+                    <p>Calculus, Linear Algebra, Probability & Statistics, Optimization, Algorithm Design, Numerical Methods</p>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Finance & Business</h4>
+                    <p>Financial Markets, Corporate Finance, Valuation Methods, Risk Management, Investment Analysis, Financial Modeling</p>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Core Competencies</h4>
+                    <p>Quantitative Analysis, Problem-Solving, Critical Thinking, Independent Research, Cross-Cultural Communication</p>
+                </div>
+            </div>
+        </section>
 
-<h2>Education</h2>
-<div class="section">
-  <strong>BSc Computer Science</strong><br>
-  SouthWest Petroleum University<br>
-  Expected Graduation: June 2026
-</div>
+        <section class="section">
+            <h2>Academic & Technical Projects</h2>
+            
+            <div class="project">
+                <div class="project-title">Quantitative Trading Strategy Analysis - Fibonacci Backtesting (XAU/USD)</div>
+                <div class="project-tech">Python, Pandas, NumPy, Matplotlib, Jupyter Notebook</div>
+                <ul>
+                    <li>Designed and implemented systematic trading strategy based on Fibonacci retracement levels for gold markets</li>
+                    <li>Developed comprehensive backtesting framework with statistical performance evaluation and risk metrics</li>
+                    <li>Built modular Python codebase emphasizing code quality, documentation, and reproducibility</li>
+                    <li>Applied mathematical concepts and algorithmic thinking to financial market analysis</li>
+                </ul>
+            </div>
+            
+            <div class="project">
+                <div class="project-title">Monte Carlo Simulation Framework</div>
+                <div class="project-tech">Python, NumPy, Statistical Modeling, Jupyter Notebook</div>
+                <ul>
+                    <li>Implemented Monte Carlo methods for stochastic modeling and probabilistic analysis</li>
+                    <li>Applied numerical simulation techniques to generate statistical distributions and estimate outcomes</li>
+                    <li>Developed computational tools for uncertainty quantification and risk assessment</li>
+                    <li>Demonstrated proficiency in Python programming and mathematical modeling</li>
+                </ul>
+            </div>
+        </section>
 
-<h2>Skills</h2>
-<ul>
-  <li>Python, C#, Git, Linux</li>
-  <li>Machine Learning, Deep Learning, CNNs</li>
-  <li>Data Cleaning, Visualization, Model Evaluation</li>
-  <li>Quant basics: statistics, probability, linear algebra</li>
-</ul>
+        <section class="section">
+            <h2>Education</h2>
+            <h3>Bachelor of Science in Computer Science</h3>
+            <p><strong>[University Name]</strong> | [Graduation Date]</p>
+            <p>Relevant Coursework:  Algorithms, Data Structures, Applied Mathematics, Probability & Statistics, Database Systems, Operating Systems</p>
+            
+            <h3>Master of Finance (In Progress)</h3>
+            <p><strong>[Target University]</strong> | [Expected Graduation Date]</p>
+            <p>Focus Areas: Financial Markets, Corporate Finance, Valuation Methods, Risk Management, Investment Analysis</p>
+        </section>
 
-<h2>Projects</h2>
-<div class="section">
-  <strong>Gold Day-Trading Research</strong><br>
-  Built technical-based analysis using Fibonacci, trend bias, liquidity mapping, and confirmation signals.
-</div>
-
-<div class="section">
-  <strong>CNN Cat–Dog Classifier</strong><br>
-  Dataset preparation, training pipeline, evaluation, and visualization.
-</div>
-
-<div class="section">
-  <strong>GAN MNIST Generator</strong><br>
-  Generator–discriminator architecture with result visualization.
-</div>
-
-<h2>Experience</h2>
-<p>Independent research in trading systems and ML experimentation.</p>
-
-<h2>Languages</h2>
-<ul>
-  <li>English</li>
-  <li>Arabic </li>
-  <li>French</li>
-  <li>Chinese (very basic)</li>
-</ul>
-
+        <section class="section">
+            <h2>Languages</h2>
+            <ul>
+                <li><strong>English: </strong> Fluent</li>
+                <li><strong>Arabic:</strong> Native</li>
+                <li><strong>French: </strong> Proficient</li>
+                <li><strong>Chinese:</strong> Intermediate</li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
