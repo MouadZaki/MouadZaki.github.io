@@ -1,292 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mouad Idrissi Zaki - CV</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mouad Idrissi Zaki - Computer Science Graduate CV</title>
+
+<style>
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+        color: #000000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 9.2pt;
+        line-height: 1.28;
+    }
+
+    .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto;
+        padding: 13mm 15mm 11mm 15mm;
+        background: #fff;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 30mm;
+        gap: 10mm;
+        align-items: start;
+        border-bottom: 1.5px solid #000;
+        padding-bottom: 7px;
+        margin-bottom: 9px;
+    }
+
+    .name {
+        font-size: 22pt;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+        margin: 0 0 2px 0;
+    }
+
+    .title {
+        font-size: 10.5pt;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .contact {
+        font-size: 8.5pt;
+        line-height: 1.45;
+    }
+
+    .contact a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .photo {
+        width: 30mm;
+        height: 36mm;
+        border: 1px solid #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .section {
+        margin-top: 8px;
+    }
+
+    .section-title {
+        font-size: 10.5pt;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        border-bottom: 1px solid #000;
+        padding-bottom: 2px;
+        margin-bottom: 5px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .summary {
+        text-align: justify;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 12mm;
+        row-gap: 3px;
+    }
+
+    .skill-item {
+        margin: 0;
+    }
+
+    .skill-label {
+        font-weight: 700;
+    }
+
+    .project {
+        margin-bottom: 6px;
+    }
+
+    .project:last-child {
+        margin-bottom: 0;
+    }
+
+    .project-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        font-weight: 700;
+    }
+
+    .project-tech {
+        font-size: 8.3pt;
+        font-style: italic;
+        margin: 1px 0 2px;
+    }
+
+    ul {
+        margin: 2px 0 0 17px;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 1px;
+    }
+
+    .education-item {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .degree {
+        font-weight: 700;
+    }
+
+    .institution {
+        margin-top: 1px;
+    }
+
+    .education-date {
+        white-space: nowrap;
+        font-weight: 700;
+    }
+
+    .languages {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+    }
+
+    .language {
+        font-weight: 700;
+    }
+
+    .language span {
+        font-weight: 400;
+    }
+
+    .availability {
+        font-weight: 700;
+    }
+
+    @media print {
         body {
-            font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height:  1.6;
-            color: #333;
-            background-color: #f4f4f4;
-            padding: 20px;
+            background: #fff;
         }
-        
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 40px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+
+        .page {
+            margin: 0;
+            width: 210mm;
+            min-height: 297mm;
         }
-        
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom:  3px solid #2c3e50;
+
+        a {
+            color: #000 !important;
+            text-decoration: none !important;
         }
-        
-        h1 {
-            font-size: 2.5em;
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-        
-        .contact-info {
-            color: #666;
-            font-size: 0.95em;
-        }
-        
-        h2 {
-            color: #2c3e50;
-            font-size: 1.5em;
-            margin-top:  30px;
-            margin-bottom: 15px;
-            padding-bottom: 8px;
-            border-bottom:  2px solid #3498db;
-        }
-        
-        h3 {
-            color: #34495e;
-            font-size: 1.2em;
-            margin-top: 15px;
-            margin-bottom:  8px;
-        }
-        
-        .section {
-            margin-bottom: 25px;
-        }
-        
-        .summary {
-            text-align: justify;
-            color: #555;
-            margin-bottom: 20px;
-        }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
-        }
-        
-        .skill-category {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 5px;
-            border-left: 4px solid #3498db;
-        }
-        
-        .skill-category h4 {
-            color:  #2c3e50;
-            margin-bottom: 8px;
-            font-size: 1.05em;
-        }
-        
-        .skill-category p {
-            color: #666;
-            font-size: 0.9em;
-            line-height: 1.8;
-        }
-        
-        .project {
-            margin-bottom: 20px;
-            padding: 15px;
-            background-color: #f8f9fa;
-            border-radius: 5px;
-            border-left: 4px solid #3498db;
-        }
-        
-        .project-title {
-            color: #2c3e50;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        
-        .project-tech {
-            color: #7f8c8d;
-            font-size: 0.9em;
-            font-style: italic;
-            margin-bottom: 8px;
-        }
-        
-        .project ul {
-            margin-left: 20px;
-            color: #555;
-        }
-        
-        .project li {
-            margin-bottom: 5px;
-        }
-        
-        ul {
-            margin-left: 20px;
-        }
-        
-        li {
-            margin-bottom: 8px;
-            color: #555;
-        }
-        
-        @media print {
-            body {
-                background-color: #fff;
-                padding: 0;
-            }
-            
-            .container {
-                box-shadow: none;
-                padding: 20px;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-            }
-            
-            h1 {
-                font-size: 2em;
-            }
-            
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    }
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1>Mouad Idrissi Zaki</h1>
-            <div class="contact-info">
-                Email:zakimouad04@gmail.com | Phone: +86 17882339592 | GitHub: https://mouadzaki.github.io/
-            </div>
-        </header>
+<div class="page">
 
-        <section class="section">
-            <h2>Professional Summary</h2>
-            <div class="summary">
-                <p>I am a Computer Science graduate with a strong foundation in analytical reasoning, mathematical modeling, and systematic problem-solving. My academic training has equipped me with rigorous skills in programming, algorithms, data structures, and applied mathematics, with a particular passion for artificial intelligence and machine learning applications. I approach complex problems with precision and discipline, emphasizing conceptual clarity and structured analysis.</p>
-                
-                <p>My objective is to pursue advanced studies in Computing and Artificial Intelligence at a leading Chinese university, where I can contribute my analytical and computational background to cutting-edge AI research. I am particularly interested in machine learning algorithms, natural language processing, computer vision, and the intersection of AI with financial technology. I value intellectual rigor, independent research, and innovative problem-solving, and I am committed to developing expertise that bridges theoretical computer science with practical AI applications.</p>
-            </div>
-        </section>
+    <header class="header">
+        <div>
+            <h1 class="name">Mouad Idrissi Zaki</h1>
+            <div class="title">COMPUTER SCIENCE & TECHNOLOGY GRADUATE | INTERNSHIP SEEKER</div>
 
-        <section class="section">
-            <h2>Technical Skills</h2>
-            
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Programming Languages</h4>
-                    <p>Python, Java, C++, C, JavaScript, SQL, R</p>
-                </div>
-                
-                <div class="skill-category">
-                    <h4>Machine Learning & AI</h4>
-                    <p>TensorFlow, PyTorch, Scikit-learn, Keras, Natural Language Processing, Computer Vision, Deep Learning, Reinforcement Learning</p>
-                </div>
-                
-                <div class="skill-category">
-                    <h4>Data Science & Analytics</h4>
-                    <p>Pandas, NumPy, Matplotlib, Seaborn, Data Preprocessing, Statistical Analysis, Feature Engineering, Model Evaluation</p>
-                </div>
-                
-                <div class="skill-category">
-                    <h4>Software & Tools</h4>
-                    <p>Git/GitHub, Linux/Unix, MATLAB, Jupyter Notebook, Visual Studio Code, Docker, Cloud Platforms (AWS/Azure)</p>
-                </div>
-                
-                <div class="skill-category">
-                    <h4>Mathematical Foundations</h4>
-                    <p>Calculus, Linear Algebra, Probability & Statistics, Optimization, Algorithm Design, Numerical Methods, Information Theory</p>
-                </div>
-                
-                <div class="skill-category">
-                    <h4>Research & Development</h4>
-                    <p>Quantitative Analysis, Problem-Solving, Critical Thinking, Independent Research, Cross-Cultural Communication, Technical Writing</p>
-                </div>
+            <div class="contact">
+                <strong>Email:</strong> zakimouad04@gmail.com
+                &nbsp;|&nbsp;
+                <strong>Phone:</strong> +212 54717446
+                <br>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/MouadZaki">github.com/MouadZaki</a>
+                &nbsp;|&nbsp;
+                <strong>Location:</strong> Morocco
+                &nbsp;|&nbsp;
+                <strong>Open to:</strong> Morocco & International Remote Opportunities
             </div>
-        </section>
+        </div>
 
-        <section class="section">
-            <h2>Academic & Technical Projects</h2>
-            
-            <div class="project">
-                <div class="project-title">QuantLab Backtesting Platform - Bachelor's Thesis</div>
-                <div class="project-tech">Python, Flask, Plotly.js, SQLite, Pandas, NumPy, Matplotlib, Web Development</div>
-                <ul>
-                    <li>Developed a market-agnostic, bar-by-bar backtesting engine with professional analytics as thesis project</li>
-                    <li>Built zero look-ahead bias sequential processing engine ensuring real-world trading conditions</li>
-                    <li>Implemented 30+ performance metrics including Sharpe, Sortino, Calmar ratios, expectancy, and risk analysis</li>
-                    <li>Created interactive web interface with candlestick charts, trade markers, and comprehensive visualizations</li>
-                    <li>Designed custom strategy upload system allowing users to extend platform with Python trading algorithms</li>
-                    <li>Deployed secure authentication system with persistent backtest history and comparative analysis tools</li>
-                </ul>
-            </div>
-            
-            <div class="project">
-                <div class="project-title">Machine Learning-Based Financial Market Analysis</div>
-                <div class="project-tech">Python, Pandas, NumPy, Matplotlib, Scikit-learn, Jupyter Notebook</div>
-                <ul>
-                    <li>Developed machine learning models for financial market prediction using Fibonacci retracement features</li>
-                    <li>Implemented comprehensive backtesting framework with statistical performance evaluation and risk metrics</li>
-                    <li>Applied supervised learning algorithms to identify trading patterns and optimize strategy parameters</li>
-                    <li>Demonstrated integration of mathematical modeling with machine learning for financial forecasting</li>
-                </ul>
-            </div>
-            
-            <div class="project">
-                <div class="project-title">Flower Image Classification using CNN</div>
-                <div class="project-tech">PyTorch, Python, Computer Vision, Deep Learning, Jupyter Notebook</div>
-                <ul>
-                    <li>Developed custom CNN architecture with 4 convolutional blocks for multi-class flower classification</li>
-                    <li>Implemented comprehensive data preprocessing and augmentation techniques (rotation, flips, color jitter)</li>
-                    <li>Achieved 85-90% accuracy on 5 flower classes (daisy, dandelion, roses, sunflowers, tulips)</li>
-                    <li>Applied advanced deep learning techniques including batch normalization, dropout, and early stopping</li>
-                </ul>
-            </div>
-            
-            <div class="project">
-                <div class="project-title">Probabilistic Machine Learning Framework</div>
-                <div class="project-tech">Python, NumPy, Scikit-learn, Statistical Modeling, Jupyter Notebook</div>
-                <ul>
-                    <li>Implemented Monte Carlo methods integrated with machine learning for stochastic modeling and probabilistic analysis</li>
-                    <li>Applied numerical simulation techniques to generate statistical distributions and estimate model uncertainties</li>
-                    <li>Developed computational tools for uncertainty quantification in machine learning predictions</li>
-                    <li>Demonstrated proficiency in combining traditional statistical methods with modern ML approaches</li>
-                </ul>
-            </div>
-        </section>
+        <div class="photo">
+            <img src="C:\Users\dell\Downloads\aHw3t(1).jpg" alt="Professional Photo">
+        </div>
+    </header>
 
-        <section class="section">
-            <h2>Education</h2>
-            <h3>Bachelor of Science in Computer Science</h3>
-            <p><strong>[SouthWest Petroleum University]</strong> | [2026/06]</p>
-            <p>Relevant Coursework:  Algorithms, Data Structures, Applied Mathematics, Probability & Statistics, Database Systems, Operating Systems, Machine Learning Fundamentals, Artificial Intelligence Concepts, Computer Networks, Software Engineering</p>
-            
-            <h3>Bachelor's Thesis - QuantLab Backtesting Platform</h3>
-            <p><strong>Completed: 2026</strong> | Web-based quantitative finance platform with professional-grade backtesting engine</p>
-            <p>Thesis demonstrates practical application of computer science principles to financial technology, combining web development, data processing, and algorithmic trading research.</p>
-        </section>
+    <section class="section">
+        <div class="section-title">Professional Summary</div>
+        <p class="summary">
+            Computer Science and Technology graduate with a strong foundation in programming,
+            algorithms, data structures, databases, data analysis, and systematic problem-solving.
+            Experienced with Python, C++, Java, JavaScript, SQL, and common development and data
+            tools through academic work and practical projects. Recently completed a final-year
+            project involving the development of a modular backtesting platform, applying software
+            development, data processing, analytical techniques, and problem-solving skills.
+            Seeking an internship where I can gain hands-on professional experience, contribute to
+            real projects, and develop practical industry skills. Adaptable and self-directed,
+            with the ability to approach unfamiliar problems, research what is needed, learn new
+            technologies, and work toward effective solutions. Open to opportunities in software
+            development, backend development, data, AI/ML, IT, and related technical roles.
+        </p>
+    </section>
 
-        <section class="section">
-            <h2>Languages</h2>
+    <section class="section">
+        <div class="section-title">Technical Skills</div>
+
+        <div class="skills-grid">
+            <p class="skill-item">
+                <span class="skill-label">Programming:</span>
+                Python, C++, Java, C, JavaScript, SQL
+            </p>
+
+            <p class="skill-item">
+                <span class="skill-label">Data & Analysis:</span>
+                Pandas, NumPy, Matplotlib, Scikit-learn, R, Excel
+            </p>
+
+            <p class="skill-item">
+                <span class="skill-label">AI / Machine Learning:</span>
+                TensorFlow, PyTorch, Scikit-learn, basic model development
+            </p>
+
+            <p class="skill-item">
+                <span class="skill-label">Development:</span>
+                Backend concepts, APIs, database systems, modular software design
+            </p>
+
+            <p class="skill-item">
+                <span class="skill-label">Tools:</span>
+                Git, GitHub, Linux/Unix, Jupyter Notebook, VS Code, MATLAB
+            </p>
+
+            <p class="skill-item">
+                <span class="skill-label">Core Foundations:</span>
+                Algorithms, Data Structures, OOP, Databases, Operating Systems
+            </p>
+
+            <p class="skill-item">
+                <span class="skill-label">Mathematics:</span>
+                Calculus, Linear Algebra, Probability & Statistics, Optimization
+            </p>
+
+            <p class="skill-item">
+                <span class="skill-label">Strengths:</span>
+                Problem-solving, analytical thinking, independent learning, adaptability
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-title">Selected Technical Projects</div>
+
+        <div class="project">
+            <div class="project-header">
+                <span>Final-Year Project — Modular Strategy Backtesting Platform</span>
+                <span>Completed 2026</span>
+            </div>
+
+            <div class="project-tech">
+                Python, Pandas, NumPy, Matplotlib, Data Processing, Software Architecture
+            </div>
+
             <ul>
-                <li><strong>English: </strong> Fluent</li>
-                <li><strong>Arabic:</strong> Native</li>
-                <li><strong>French: </strong> Proficient</li>
-                <li><strong>Chinese (Mandarin): </strong> Currently preparing for HSK examination</li>
+                <li>Designed and completed a platform for backtesting trading strategies across XAU/USD and EUR/USD markets.</li>
+                <li>Developed a modular architecture allowing multiple built-in strategies and support for user-defined strategies.</li>
+                <li>Implemented market and strategy selection, historical data processing, trade visualization, and backtesting workflows.</li>
+                <li>Built analytical outputs including trade statistics, risk/reward metrics, win rate, and performance breakdowns by time periods.</li>
+                <li>Applied structured problem-solving, data processing, software design, and algorithmic thinking throughout the project.</li>
             </ul>
-        </section>
-    </div>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <span>DBSCAN Clustering Project</span>
+                <span>Academic Project</span>
+            </div>
+
+            <div class="project-tech">
+                Python, Scikit-learn, Pandas, Matplotlib
+            </div>
+
+            <ul>
+                <li>Implemented and analyzed density-based clustering techniques for data exploration and pattern identification.</li>
+                <li>Worked with data preprocessing, algorithm implementation, visualization, and interpretation of results.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <span>Monte Carlo Simulation Framework</span>
+                <span>Academic Project</span>
+            </div>
+
+            <div class="project-tech">
+                Python, NumPy, Statistical Modeling, Jupyter Notebook
+            </div>
+
+            <ul>
+                <li>Implemented Monte Carlo simulation methods for probabilistic modeling and numerical analysis.</li>
+                <li>Developed computational tools to generate statistical distributions and estimate outcomes under uncertainty.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-title">Education</div>
+
+        <div class="education-item">
+            <div>
+                <div class="degree">Bachelor's Degree in Computer Science and Technology</div>
+                <div class="institution">Southwest Petroleum University (SWPU), China</div>
+            </div>
+            <div class="education-date">Graduated June 2026</div>
+        </div>
+
+        <div style="margin-top:3px;">
+            <strong>Relevant Coursework:</strong>
+            Algorithms, Data Structures, Applied Mathematics, Probability & Statistics,
+            Database Systems, Operating Systems
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-title">Languages</div>
+
+        <div class="languages">
+            <div class="language">Arabic <span>— Native</span></div>
+            <div class="language">English <span>— Fluent</span></div>
+            <div class="language">French <span>— Working Proficiency</span></div>
+            <div class="language">Chinese <span>— Basic</span></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-title">Internship Availability</div>
+        <p class="availability">
+            Available for internship opportunities in Morocco and international remote positions.
+            Open to software development, backend development, data, AI/ML, IT, and related
+            Computer Science roles.
+        </p>
+    </section>
+
+</div>
 </body>
 </html>
