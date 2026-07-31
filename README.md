@@ -98,7 +98,7 @@ I am actively seeking internship opportunities in Morocco and international remo
 ## Contact
 
 - **Email:** zakimouad04@gmail.com
-- **Phone:** +212 54717446
+- **Phone:** +*****-*****
 - **GitHub:** https://github.com/MouadZaki
 - **Location:** Morocco
 
